@@ -169,7 +169,7 @@
                   md:table-cell
                 "
               >
-                Preço
+                Preço H
               </th>
 
               <th
@@ -288,7 +288,7 @@
                   md:table-cell
                 "
               >
-                <span class="inline-block w-1/3 md:hidden font-bold">Preço</span
+                <span class="inline-block w-1/3 md:hidden font-bold">Preço H</span
                 >{{ carro.preco }}
               </td>
 

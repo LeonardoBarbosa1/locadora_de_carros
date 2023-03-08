@@ -146,6 +146,29 @@
                   {{ errors.marca }}
                 </p>
               </div>
+
+              <div class="grid grid-cols-1">
+                <label class="
+                    uppercase
+                    md:text-sm
+                    text-xs text-gray-500 text-light
+                    font-semibold
+                  ">Preço H</label>
+                <input id="preco" v-model="form.preco" class="
+                    py-2
+                    px-3
+                    rounded-lg
+                    border-2 border-purple-300
+                    mt-1
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-purple-600
+                    focus:border-transparent
+                  " type="text" placeholder="" />
+                <p class="error text-red-700" v-if="errors.preco">
+                  {{ errors.preco }}
+                </p>
+              </div>
             </div>
 
             <div class="flex justify-end md:gap-8 gap-4 pt-5 pb-5 pr-5">
@@ -198,6 +221,7 @@ export default {
         situacao: this.$props.carro.situacao,
         modelo: this.$props.carro.modelo,
         marca: this.$props.carro.marca,
+        preco: this.$props.carro.preco,
       },
     };
   },
