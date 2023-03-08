@@ -169,6 +169,21 @@
                   md:table-cell
                 "
               >
+                Preço
+              </th>
+
+              <th
+                class="
+                  bg-gray-800
+                  p-2
+                  text-white
+                  font-bold
+                  md:border md:border-gray-800
+                  text-left
+                  block
+                  md:table-cell
+                "
+              >
                 Ações
               </th>
             </tr>
@@ -262,6 +277,19 @@
               >
                 <span class="inline-block w-1/3 md:hidden font-bold">Marca</span
                 >{{ carro.marca }}
+              </td>
+
+              <td
+                class="
+                  p-2
+                  md:border md:border-gray-200
+                  text-left
+                  block
+                  md:table-cell
+                "
+              >
+                <span class="inline-block w-1/3 md:hidden font-bold">Preço</span
+                >{{ carro.preco }}
               </td>
 
               <td

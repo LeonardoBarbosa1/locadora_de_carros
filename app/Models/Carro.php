@@ -33,7 +33,7 @@ class Carro extends Model
         }
     }
 
-    protected $fillable = ['id','situacao','modelo','marca'];
+    protected $fillable = ['id','situacao','modelo','marca','preco'];
 
 
     

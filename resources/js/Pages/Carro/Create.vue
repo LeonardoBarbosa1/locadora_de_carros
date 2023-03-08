@@ -74,6 +74,15 @@
                                 <p class="error text-red-700" v-if="errors.marca">{{ errors.marca }}</p>
                             </div>
 
+                            <div class="grid grid-cols-1">
+                                <label
+                                    class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Preço</label>
+                                <input id="preco" v-model="form.preco"
+                                    class="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                    type="text" placeholder="" />
+                                <p class="error text-red-700" v-if="errors.preco">{{ errors.preco }}</p>
+                            </div>
+
 
                         </div>
 
@@ -113,6 +122,7 @@ export default {
                 situacao: null,
                 modelo: null,
                 marca: null,
+                preco: null,
 
             }
         }

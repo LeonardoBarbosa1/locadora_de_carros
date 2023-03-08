@@ -21,15 +21,17 @@ class CarroController extends Controller
             $query->Where("id", "ILIKE", "%" . $term . "%")
                 ->orWhere("situacao", "ILIKE", "%" . $term . "%")
                 ->orWhere("modelo", "ILIKE", "%" . $term . "%")
-                ->orWhere("marca", "ILIKE", "%" . $term . "%");
+                ->orWhere("marca", "ILIKE", "%" . $term . "%")
+                ->orWhere("preco", "ILIKE", "%" . $term . "%");
         })->paginate(10)
             ->through(function ($carro) {
                 return [
-                    'id' => $carro->id,
+                    "id" => $carro->id,
                     "situacao" => $carro::getSituacaoByID($carro->situacao),
                     //"situacao" => $carro->situacao,
                     "modelo" => $carro->modelo,
                     "marca" => $carro->marca,
+                    "preco" => $carro->preco,
 
                 ];
             });
